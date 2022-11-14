@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Пошук</title>
+  </head>
+  <body>
+    <ul>
+      <li><a href="./index.html">Табличка</a></li>
+      <li><a href="./regisration.html">Реєстрація</a></li>
+      <li><a href="./authorize.html">Авторизація</a></li>
+      <li><a href="./search.html">Пошук</a></li>
+    </ul>
+    <hr />
+    <h1>Пошук</h1>
+    <form action="https://fom.in.ua/echo">
+      <label for="body"><strong>Тип кузова</strong></label>
+
+      <select id="body" name="body">
+        <option value="sedan">Седан</option>
+        <option value="coupe">Купе</option>
+        <option value="crashed">Розбитий</option>
+      </select>
+      <br />
+      <label for="brand"><strong>Марка</strong></label>
+      <select id="brand" name="brand">
+        <option value="Mersedes">Mersedes</option>
+        <option value="BMW">BMW</option>
+        <option value="Tesla">Tesla</option>
+      </select>
+      <br />
+      <label for="coutry"><strong>Країна виробництва</strong></label>
+      <select id="coutry" name="coutry">
+        <option value="Afghanistan">Afghanistan</option>
+        <option value="Albania">Albania</option>
+        <option value="Algeria">Algeria</option>
+        <option value="American Samoa">American Samoa</option>
+        <option value="Andorra">Andorra</option>
+        <option value="Angola">Angola</option>
+        <option value="Yemen">Yemen</option>
+        <option value="Serbia">Serbia</option>
+      </select>
+      <div>
+        <label for="price"><strong>Приблизна ціна</strong></label>
+        <input type="range" id="price" name="price" min="10000" max="100000" step="1000" />
+      </div>
+      <div>
+        <label for="year"><strong>Рік випуску</strong></label>
+        <input type="range" id="year" name="year" min="1960" max="2022" />
+      </div>
+      <p><strong>Укажіть cтан</strong>:</p>
+      <label>
+        <input type="checkbox" name="intact" value="yes" />
+        Непошкоджена
+      </label>
+
+      <label>
+        <input type="checkbox" name="in credit" value="yes" />
+        У кредиті
+      </label>
+
+      <label>
+        <input type="checkbox" name="custom problems" value="Все ок" />
+        Нерозмитнена
+      </label>
+
+      <p><strong>Виберіть тип палива:</strong></p>
+      <input type="radio" id="petrol" name="fuel" value="Petrol" />
+      <label for="petrol">Бензин</label>
+
+      <input type="radio" id="gas" name="fuel" value="gas" />
+      <label for="petrol">Газ</label>
+
+      <input type="radio" id="electricity" name="fuel" value="electricity" />
+      <label for="electricity">Єлектрика</label>
+
+      <p><strong>Виберіть тип коробки передач:</strong></p>
+      <input type="radio" id="auto" name="gear" value="auto" />
+      <label for="auto">Автомат</label>
+      <input type="radio" id="manual" name="gear" value="manual" />
+      <label for="manual">Ручка</label>
+      <br />
+      <p><strong>Бажаний колір:</strong></p>
+      <div>
+        <input type="color" id="color" name="color" value="black" />
+        <label for="color">Колір</label>
+      </div>
+      <p><strong>Виберіть наявність опцій комфорту:</strong></p>
+      <label>
+        <input type="checkbox" name="hatch" value="yes" />
+        Люк
+      </label>
+      <label>
+        <input type="checkbox" name="leather interior" value="yes" />
+        Шкіряний салон
+      </label>
+      <label>
+        <input type="checkbox" name="autopilot" value="yes" />
+        Автопілот
+      </label>
+      <br />
+      <br />
+      <input type="submit" value="Надіслати" />
+    </form>
+  </body>
+</html>
