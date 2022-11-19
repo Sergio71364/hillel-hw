@@ -4,43 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ДЗ №3 Нежигая Сергія</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <title>ДЗ №4 Нежигая Сергія</title>
   </head>
   <body>
-    <ul>
-      <li><a href="./index.html">Табличка</a></li>
-      <li><a href="./regisration.html">Реєстрація</a></li>
-      <li><a href="./authorize.html">Авторизація</a></li>
-      <li><a href="./search.html">Пошук</a></li>
-    </ul>
-    <hr />
-    <h1>ДЗ №3</h1>
-    <h2>Табличка</h2>
-    <table border="2" align="center" bordercolor="#4a86e8" width="600">
-      <tr>
-        <td colspan="4" bgcolor="#4a86e8" align="center">MY FIRST TABLE</td>
-      </tr>
-      <tr>
-        <td bgcolor="#4a86e8" align="center">First cell</td>
-        <td bgcolor="#4a86e8" align="center">Second cell</td>
-        <td colspan="2" rowspan="3" align="center">6 cells merged together</td>
-      </tr>
-      <tr>
-        <td colspan="2" bgcolor="#ffff00" align="center">2 cells merged into one</td>
-      </tr>
-      <tr>
-        <td align="center" bgcolor="#ffff00">
-          1st cell<br />
-          3rd row
-        </td>
-        <td align="center" bgcolor="#ffff00">
-          2nd cell<br />
-          3rd row
-        </td>
-      </tr>
-      <tr>
-        <td colspan="4" align="center" bgcolor="#ffff00">Do you like tables ?</td>
-      </tr>
-    </table>
+    <div id="container">
+      <h1>ДЗ №4</h1>
+      <h2>Селектори</h2>
+      <ul>
+        <li>
+          <p class="example">* { margin: 0; }</p>
+          <p class="description">- маржини всіх єлементів поставити рівними 0</p>
+        </li>
+        <li>
+          <p class="example">#container { margin: 0; }</p>
+          <p class="description">- маржини елемента з id="container" поставити рівними 0</p>
+        </li>
+        <li>
+          <p class="example">.error { color: red; }</p>
+          <p class="description error">- колір всіх елементів з класом "error" зробити червоним</p>
+        </li>
+        <li>
+          <p class="example">ul { margin: 0; }</p>
+          <p class="description">- маржини усіх списків типу "ul" поставити рівними 0</p>
+        </li>
+        <li>
+          <p class="example">li a { text-decoration: none; }</p>
+          <p class="description" id="last-description">
+            всі посилання всередині списків "li" зробити <a href="">без прикрашань</a> (наприклад
+            без підкреслень)
+          </p>
+        </li>
+      </ul>
+    </div>
   </body>
 </html>

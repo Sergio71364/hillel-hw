@@ -1,0 +1,45 @@
+* {
+  font-size: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  outline: 1px dotted grey;
+  width: 50%;
+  margin: 0 auto;
+}
+
+#container {
+  margin: 0;
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: blue;
+}
+
+.example {
+  color: black;
+}
+
+.description {
+  color: rgba(38, 37, 37, 0.835);
+}
+
+.error.description {
+  color: red;
+}
+
+#last-description {
+  color: green;
+}
+
+li a {
+  text-decoration: none;
+}
