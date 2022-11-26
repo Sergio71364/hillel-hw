@@ -4,38 +4,133 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles.css" />
-    <title>ДЗ №4 Нежигая Сергія</title>
+    <title>ДЗ №5 Нежигая Сергія</title>
   </head>
   <body>
-    <div id="container">
-      <h1>ДЗ №4</h1>
-      <h2>Селектори</h2>
-      <ul>
-        <li>
-          <p class="example">* { margin: 0; }</p>
-          <p class="description">- маржини всіх єлементів поставити рівними 0</p>
-        </li>
-        <li>
-          <p class="example">#container { margin: 0; }</p>
-          <p class="description">- маржини елемента з id="container" поставити рівними 0</p>
-        </li>
-        <li>
-          <p class="example">.error { color: red; }</p>
-          <p class="description error">- колір всіх елементів з класом "error" зробити червоним</p>
-        </li>
-        <li>
-          <p class="example">ul { margin: 0; }</p>
-          <p class="description">- маржини усіх списків типу "ul" поставити рівними 0</p>
-        </li>
-        <li>
-          <p class="example">li a { text-decoration: none; }</p>
-          <p class="description" id="last-description">
-            всі посилання всередині списків "li" зробити <a href="">без прикрашань</a> (наприклад
-            без підкреслень)
+    <main>
+      <section class="hero-section">
+        <div class="container">
+          <header class="header">
+            <nav>
+              <ul class="menu">
+                <li><a href="#" class="menu-text active">Homepage</a></li>
+                <li><a href="#" class="menu-text">About author</a></li>
+                <li><a href="#" class="menu-text">Works</a></li>
+                <li><a href="#" class="menu-text">Process</a></li>
+                <li><a href="#" class="menu-text">Contacts</a></li>
+              </ul>
+            </nav>
+          </header>
+          <h1 class="hero-title">Design and layout</h1>
+          <!-- subtitle total height is less than in example. Why ??? -->
+          <p class="hero-subtitle">
+            Lorem Ipsum is fish text often used in print and web design. Lorem Ipsum has been the
+            standard "fish" for Latin texts since the early 16th century.
           </p>
-        </li>
-      </ul>
-    </div>
+          <button type="button" class="button">WRITE ME</button>
+        </div>
+      </section>
+      <section class="about">
+        <div class="container">
+          <h2 class="about-title">About me</h2>
+          <p class="about-subtitle">
+            About meLorem Ipsum is fish text often used in print and web design. Lorem Ipsum has
+            been the standard "fish" for Latin texts since the early 16th century.
+          </p>
+        </div>
+      </section>
+      <section class="projects">
+        <div class="container">
+          <h2 class="projects-title visually-hidden">Our Projects</h2>
+          <ul class="projects-list">
+            <li class="project-item">
+              <svg class="icon" width="50" height="50">
+                <use href="./icons.svg#project"></use>
+              </svg>
+              <div class="project-description">
+                <span class="projects-number">40+</span>
+                <p class="projects-subtitle">projects</p>
+              </div>
+            </li>
+            <li class="project-item">
+              <svg class="icon" width="50" height="50">
+                <use href="./icons.svg#project"></use>
+              </svg>
+              <div class="project-description">
+                <span class="projects-number">40+</span>
+                <p class="projects-subtitle">projects</p>
+              </div>
+            </li>
+            <li class="project-item">
+              <svg class="icon" width="50" height="50">
+                <use href="./icons.svg#project"></use>
+              </svg>
+              <div class="project-description">
+                <span class="projects-number">40+</span>
+                <p class="projects-subtitle">projects</p>
+              </div>
+            </li>
+            <li class="project-item">
+              <svg class="icon" width="50" height="50">
+                <use href="./icons.svg#project"></use>
+              </svg>
+              <div class="project-description">
+                <span class="projects-number">40+</span>
+                <p class="projects-subtitle">projects</p>
+              </div>
+            </li>
+            <li class="project-item">
+              <svg class="icon" width="50" height="50">
+                <use href="./icons.svg#project"></use>
+              </svg>
+              <div class="project-description">
+                <span class="projects-number">40+</span>
+                <p class="projects-subtitle">projects</p>
+              </div>
+            </li>
+            <li class="project-item">
+              <svg class="icon" width="50" height="50">
+                <use href="./icons.svg#project"></use>
+              </svg>
+              <div class="project-description">
+                <span class="projects-number">40+</span>
+                <p class="projects-subtitle">projects</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="work">
+        <div class="container">
+          <h2 class="work-title">How do I work</h2>
+          <p class="work-subtitle">
+            Lorem Ipsum is fish text often used in print and web design. Lorem Ipsum has been the
+            standard "fish" for Latin texts since the early 16th century.
+          </p>
+          <iframe width="1110" height="600" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+          </iframe>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <h2 class="footer-title">John Smith</h2>
+        <p class="footer-description">(c) 2018. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
