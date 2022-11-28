@@ -74,23 +74,23 @@ ul {
   display: block;
   padding-top: 1px;
   font-weight: 400;
-  color: var(--color-black);
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  color: var(--color-black);
 }
 
 .menu-text.active {
-  color: var(--color-accent);
   font-weight: 500;
+  color: var(--color-accent);
 }
 
 .hero-title {
   font-size: 48px;
   font-weight: 500;
   line-height: 1.65;
-  height: 45px;
+  /* height: 45px; */
+  margin-bottom: 26px;
   color: var(--color-black);
-  margin-bottom: 60px;
 }
 
 .hero-subtitle {
@@ -117,7 +117,7 @@ ul {
 
 .about {
   padding-top: 112px;
-  padding-bottom: 100px;
+  padding-bottom: 89px;
 }
 
 .about-title,
@@ -127,7 +127,7 @@ ul {
   line-height: 1.19;
   text-align: center;
   color: #000000;
-  margin-bottom: 50px;
+  margin-bottom: 42px;
 }
 
 .about-subtitle,
@@ -190,11 +190,12 @@ ul {
 }
 
 .work-subtitle {
-  margin-bottom: 57px;
+  margin-bottom: 72px;
 }
 
 .footer {
-  padding: 50px 0;
+  padding-top: 50px;
+  padding-bottom: 41px;
   background-color: var(--color-accent);
 }
 
@@ -203,7 +204,7 @@ ul {
   line-height: 1.19;
   font-weight: 500;
   color: var(--color-white);
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 }
 
 .footer-description {
